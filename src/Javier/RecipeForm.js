@@ -11,6 +11,7 @@ export default function RecipeForm(props){
 
   function handleSubmit (e) {
     props.add({id: `${Math.random()}`, name: name.value, ingridients: ingridients.value, time: time.value})
+    
   }
 
   return(
