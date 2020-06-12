@@ -4,7 +4,7 @@ export default function Joey () {
   
     return (
       <>
-      <h1>It works!</h1>
+      <h1></h1>
       </>
     )
   }
