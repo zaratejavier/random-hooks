@@ -21,11 +21,35 @@ const addTrail = (postTrail) => {
  setTrails([postTrail, ...trails])
 }
     return (
-      <div>
-        <h1>Trails!</h1>
+      <div style={styles.background}>
+        <h1 style={styles.form}>Running Trails</h1>
+        <div style={styles.form}>
         <TrailForm add={addTrail} />
+        </div>
+        <div style={styles.trails}>
         {renderTrails()}
+        </div>
       </div>
     )
   }
   
+  const styles = {
+    trails: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr 1fr",
+      color: "#473e5c",
+   
+
+    },
+    background: {
+      background: "#fbebff",
+      display: "flex",
+      flexDirection: "column",
+      
+    },
+    form: {
+      alignSelf: "center",
+      fontFamily: "Mansalva"
+
+    }
+  }
